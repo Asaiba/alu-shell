@@ -1,2 +1,2 @@
 #!/bin/bash
-cd root
+chmod +x change_to_home.sh
