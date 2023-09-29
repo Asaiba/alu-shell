@@ -1,26 +1,38 @@
 #!/usr/bin/env bash
-# This script displays numbers from 1 to 20 and displays additional messages for the 4th, 9th, and 17th loop iterations.
+# Write a Bash script that displays the time for 12 hours and 59 minutes
 
-count=1
+i=1
 
-while [ $count -le 20 ]
+while [ $i -le 20 ]
+
 do
-    case $count in
-        4)
-            echo "4"
-            echo "bad luck from China"
-            ;;
-        9)
-            echo "9"
-            echo "bad luck from Japan"
-            ;;
-        17)
-            echo "17"
-            echo "bad luck from Italy"
-            ;;
-        *)
-            echo $count
-            ;;
+
+    case $i in
+
+4)
+
+    echo -e "$i\nbad luck from China"
+
+    ;;
+
+9)
+
+    echo -e "$i\nbad luck from Japan"
+
+    ;;
+
+17)
+
+    echo -e "$i\nbad luck from Italy"
+
+    ;;
+
+*)
+
+    echo $i
+
     esac
-    count=$((count+1))
+
+    ((i++))
+
 done
