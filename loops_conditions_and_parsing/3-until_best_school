@@ -6,6 +6,6 @@ until [ $counter -eq 10 ]
 do
     echo "Best School."
 
-    ((counter++))
+   count= $((counter++))
 
 done
