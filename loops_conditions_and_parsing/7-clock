@@ -1,38 +1,34 @@
 #!/usr/bin/env bash
 #Write a Bash script that displays the time for 12 hours and 59 minutes
 
-i=1
+hour=0
 
-while [ $i -le 20 ]
+ 
+
+while [ $hour -le 12 ]
 
 do
 
-    case $i in
+    echo "Hour: $hour"
 
-4)
+ 
 
-    echo -e "$i\nbad luck from China"
+    minute=1
 
-    ;;
+ 
 
-9)
+        while [ $minute -le 59 ]
 
-    echo -e "$i\nbad luck from Japan"
+    do
 
-    ;;
+        echo $minute
 
-17)
+        ((minute++))
 
-    echo -e "$i\nbad luck from Italy"
+    done
 
-    ;;
+ 
 
-*)
-
-    echo $i
-
-    esac
-
-    ((i++))
+    ((hour++))
 
 done
